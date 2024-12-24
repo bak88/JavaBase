@@ -1,5 +1,7 @@
 package com.aston.javabase.class_loaders;
 
+import lesson1.src.main.java.com.aston.javabase.class_loaders.ClassLoaders;
+
 public class MainClass {
 
     public static void main(String[] args) {

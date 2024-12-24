@@ -1,4 +1,4 @@
-package com.aston.javabase.class_loaders;
+package lesson1.src.main.java.com.aston.javabase.class_loaders;
 
 import com.aston.javabase.Homework;
 

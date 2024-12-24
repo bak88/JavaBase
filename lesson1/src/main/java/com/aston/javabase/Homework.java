@@ -1,10 +1,21 @@
 package com.aston.javabase;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Homework {
 
+    public static void main(String[] args){
+
+        turnString("I love Java");
+    }
     // Перевернуть строку и вывести на консоль
     //  String string = "I love Java";
     public static void turnString(String string) {
+
+        StringBuilder sb = new StringBuilder(string);
+        System.out.println(sb.reverse().toString());
     }
 
     // int[] ints = {1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9};
