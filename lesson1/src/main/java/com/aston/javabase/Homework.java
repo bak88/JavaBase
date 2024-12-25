@@ -14,8 +14,16 @@ public class Homework {
     //  String string = "I love Java";
     public static void turnString(String string) {
 
-        StringBuilder sb = new StringBuilder(string);
-        System.out.println(sb.reverse().toString());
+//        StringBuilder sb = new StringBuilder(string);
+//        System.out.println(sb.reverse().toString());
+
+        char[] array = string.toCharArray();
+        char[] arrayRevers = new char[array.length];
+
+        for (int i = array.length - 1; i >= 0 ; i--) {
+            arrayRevers[i] = array[i];
+            System.out.print(arrayRevers[i]);
+        }
     }
 
     // int[] ints = {1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9};
