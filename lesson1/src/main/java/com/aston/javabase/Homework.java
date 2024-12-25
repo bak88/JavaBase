@@ -1,14 +1,18 @@
 package com.aston.javabase;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 public class Homework {
 
     public static void main(String[] args){
 
-        turnString("I love Java");
+        // turnString("I love Java");
+
+//        getDistinctNumbers(new int[] {1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9});
+
+
+
+
     }
     // Перевернуть строку и вывести на консоль
     //  String string = "I love Java";
@@ -29,6 +33,17 @@ public class Homework {
     // int[] ints = {1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9};
     // Удалить дубликаты из массива и вывести в консоль
     public static void getDistinctNumbers(int[] ints) {
+
+        HashSet<Integer> uniqueElement = new HashSet<Integer>() ;
+
+        for (int i = 0; i < ints.length; i++) {
+            uniqueElement.add(ints[i]);
+        }
+
+        for(var el : uniqueElement) {
+            System.out.print(el + " ");
+        }
+
     }
 
     // Дан массив, заполненный уникальными значениями типа int.
