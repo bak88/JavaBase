@@ -10,7 +10,7 @@ public class Homework {
 
 //        getDistinctNumbers(new int[] {1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9});
 
-
+        findSecondMaxElement(new int[] {10, 15, 23, 11, 44, 13, 66, 1, 6, 47});
 
 
     }
@@ -50,7 +50,24 @@ public class Homework {
     // int[] arr = {10, 15, 23, 11, 44, 13, 66, 1, 6, 47};
     // Необходимо найти элемент, который меньше максимума, но больше всех остальных.
     public static Integer findSecondMaxElement(int[] arr) {
-        return null;
+
+        int firstMax = arr[0];
+        int secondMax = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] > firstMax)
+                firstMax = arr[i];
+
+            if (arr[i] > secondMax)
+                if(arr[i] == firstMax)
+                    continue;
+                else
+                    secondMax = arr[i];
+        }
+
+        System.out.println(secondMax);
+        return secondMax;
     }
 
     // Найти длину последнего слова в строке. В строке только буквы и пробелы.
