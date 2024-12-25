@@ -6,12 +6,13 @@ public class Homework {
 
     public static void main(String[] args){
 
-        // turnString("I love Java");
+//         turnString("I love Java");
 
 //        getDistinctNumbers(new int[] {1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9});
 
-        findSecondMaxElement(new int[] {10, 15, 23, 11, 44, 13, 66, 1, 6, 47});
+//        findSecondMaxElement(new int[] {10, 15, 23, 11, 44, 13, 66, 1, 6, 47});
 
+        lengthOfLastWord("    fly me    to the moon    ");
 
     }
     // Перевернуть строку и вывести на консоль
@@ -74,7 +75,16 @@ public class Homework {
     // "Hello world" - 5
     // "    fly me    to the moon    " - 4
     public static Integer lengthOfLastWord(String string) {
-        return null;
+
+        String newString = string.trim();
+
+        String[] array = newString.split(" ");
+
+        int lenghtWord = array[array.length-1].length();
+
+        System.out.println(lenghtWord);
+
+        return lenghtWord;
     }
 
     // Определить, что строка является палиндромом
