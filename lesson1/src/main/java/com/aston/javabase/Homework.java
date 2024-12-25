@@ -12,7 +12,9 @@ public class Homework {
 
 //        findSecondMaxElement(new int[] {10, 15, 23, 11, 44, 13, 66, 1, 6, 47});
 
-        lengthOfLastWord("    fly me    to the moon    ");
+//        lengthOfLastWord("    fly me    to the moon    ");
+
+//        System.out.println(isPalindrome("112211"));
 
     }
     // Перевернуть строку и вывести на консоль
@@ -95,6 +97,13 @@ public class Homework {
     // aba - true
     // 112211 - true
     public static boolean isPalindrome(String string) {
-        return false;
+
+        for (int i = 0; i < string.length() / 2; i++) {
+            if(string.charAt(i) == string.charAt(string.length() - 1 - i))
+                continue;
+            return false;
+        }
+
+        return true;
     }
 }

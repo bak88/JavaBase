@@ -1,6 +1,7 @@
-package com.aston.javabase.order_of_initialization;
+package lesson1.src.main.java.com.aston.javabase.order_of_initialization;
 
 public class ChildClass extends ParentClass {
+
     static {
         System.out.println("Статический блок №1 дочернего класса.");
     }
